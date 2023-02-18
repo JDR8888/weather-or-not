@@ -40,6 +40,7 @@ N/A
 # Usage
 N/A
 # Credits   
-  [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
+  [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com) 
+  symbol.cc, openweather, 
 # License
 Please see the repo for license info

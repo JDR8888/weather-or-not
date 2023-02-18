@@ -1,14 +1,14 @@
 
-#type-header {
-    border: 1px solid black;
-    
+header {
+    border: 1px solid rgb(88, 84, 84);
 }
+
 .my-list li {
     list-style-type: none;
     border: 1px solid white;
     text-align: center;
     letter-spacing: 3.5px;
-    margin: 5px;
+    margin-bottom: 15px;
     padding: 3px;
 };
 
