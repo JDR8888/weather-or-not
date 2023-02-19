@@ -12,7 +12,7 @@ $(".weather-date").text(today.format('[Today is] D MMM YYYY'));
 
 function getCoords(city) {
     // console.log(city);
-    coordsURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=9d843596ad3105698ced71f96ac932c0`
+    coordsURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=9d843596ad3105698ced71f96ac932c0`
     fetch(coordsURL)
         .then(function (response) {
             return response.json();
@@ -27,7 +27,7 @@ function getCoords(city) {
         lon = lon.concat(data[0].lon);
         lon = lon.substring(0,5);
         //now that i've extracted the lat/lon, i will make another api call for the current weather by plugging in the lat/long i got into the api url to call in the next function
-          weatherURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=9d843596ad3105698ced71f96ac932c0&units=imperial`;
+          weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=9d843596ad3105698ced71f96ac932c0&units=imperial`;
           //i will make another api variable to take the exact same lat/lon combo but it will call the 5-day forecast insteaed of the current weather
         // console.log(weatherURL);
            getWeather(weatherURL);
@@ -45,7 +45,7 @@ function getWeather(weatherURL) {
             $(".weather-wind").text('wind speed: '+ data.wind.speed +'mph');
             $(".weather-humidity").text('humidity: '+ data.main.humidity +'%');
             let iconID = data.weather[0].icon;
-            iconSource = `http://openweathermap.org/img/wn/${iconID}@2x.png`;
+            iconSource = `https://openweathermap.org/img/wn/${iconID}@2x.png`;
             $("#wicon").attr('src', iconSource);
             $("#wicon").attr('alt', "weather icon");
             console.log(iconID);
