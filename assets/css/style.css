@@ -10,7 +10,12 @@ header {
     letter-spacing: 3.5px;
     margin-bottom: 15px;
     padding: 3px;
+    border-radius: 8px
 };
+
+.weather-list {
+    list-style-type: none;
+}
 
 /* #feedback { font-size: 1.4em; }
   #selectable .ui-selecting { background: #FECA40; }

@@ -37,17 +37,33 @@
                 </nav>
                 <!--my list below should populate with whatever was searched last - it is a clickable list utilizing jQ ui-widget and will need to write js code to make it each one, when clicked, do the same thing as when a user first typed it in and clicked search. i.e. call the "search" function or whatever-->
                 <ul id="selectable" class="col-12 my-list bg-dark text-light p-4 display-6 rounded">
-                    
-                    
                 </ul>
+
                 
             </div>
+            <div class="col-12 col-lg-6 mt-3 bg-secondary rounded">
+                <h2 class="text-light text-center w-100 p-2">Your Current Weather:</h2>
+                <div class="weather-list card text-light p-4 text-center rounded bg-dark m-3">
+                    <ul class="list-group list-group-flush bg-dark rounded list-unstyled m-3">
+                      <li class="weather-list h3 weather-city">City:</li>
+                      <li class="weather-list h3 weather-temp">Temperature: </li>
+                      <li class="weather-list h3 weather-wind">Wind Speed: </li>
+                      <li class="weather-list h3 weather-humidity">humidity: </li>
+                      <li class="weather-list h3 weather-date">Date: </li>
+                    </ul>
+                  </div>
+            </div> 
         </div>
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"></script> 
     <script src="./assets/js/script.js"></script> 
+    
    
 </body>
 </html>
