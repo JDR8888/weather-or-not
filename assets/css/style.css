@@ -1,6 +1,6 @@
 
 header {
-    border: 1px solid rgb(88, 84, 84);
+    border-bottom: 1px solid white;
 }
 
 .my-list li {
@@ -13,10 +13,6 @@ header {
     border-radius: 8px;
     color: white;
 };
-
-.list-hov:hover {
-    color: aquamarine;
-}
 
 .weather-list {
     list-style-type: none;
