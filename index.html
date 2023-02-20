@@ -19,36 +19,98 @@
                 <h1 class="bg-dark text-light">&#9748; &#127777; Weather Or Not, Here We Go &#127774; &#10052;</h1>
                 <h2 class="bg-dark text-light">Pick a city and see the 5 day forecast for your trip!</h2>
             </header>
-            <div class="container d-flex row col-12 col-lg-6">
-                <h2 class="rounded mt-3 p-3 bg-dark text-primary col-12" id="type-header"> Type in City Name Below</h2>
+            <div class=" h-60 container d-flex row col-12 col-lg-6 mh-70">
+                <h2 class="rounded mt-3 p-3 bg-dark text-info col-12" id="type-header"> Type in City Name Below</h2>
                 <nav class="navbar navbar-light bg-dark col-12 mt-2">
                     <div class="container-fluid">
                       <form class="d-flex" id="search-box">
-                        <input id="searcher"class="form-control me-2 mt-3 bg-dark text-light" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary mt-3" type="submit">Search</button>
+                        <input id="searcher"class="form-control me-2 mt-3 bg-dark text-info" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info mt-3" type="submit">Search</button>
                       </form>
                     </div>
                 </nav>
                 <!--my list below should populate with whatever was searched last - it is a clickable list utilizing jQ ui-widget and will need to write js code to make it each one, when clicked, do the same thing as when a user first typed it in and clicked search. i.e. call the "search" function or whatever-->
-                <ul id="selectable" class="col-12 my-list p-4 display-6 rounded">
+                <ul id="selectable" class="h-75 col-12 my-list p-4 display-6 rounded overflow-scroll">
                 </ul>
 
                 
             </div>
-            <div class="col-12 col-lg-6 mt-3 bg-secondary rounded">
+            <div class="h-50 col-12 col-lg-6 align-self-center bg-secondary rounded p-4 m-2">
                 <h2 class="text-light text-center w-100 p-2">Your Current Weather:</h2>
                 <div class="weather-list card text-light p-4 text-center rounded bg-dark m-3">
-                    <ul class="list-group list-group-flush bg-dark rounded list-unstyled m-3">
+                    <ul class="list-group list-group-flush bg-dark rounded list-unstyled m-3 overflow-auto">
                       <li class="weather-list h3 weather-date">Date: </li>
-                      <li class="weather-list h3 weather-city">City:</li>
-                      <li class="weather-list h3"><i class="weather-icon"><img id="wicon" src=""></i> </li>
+                      <li class="weather-list h3">City: <span class="weather-city text-info"></span></li>
+                      <li class="weather-list h3 bg-info"><i class=""><img id="wicon" src=""></i> </li>
                       <li class="weather-list h3 weather-temp">Temperature: </li>
                       <li class="weather-list h3 weather-wind">Wind Speed: </li>
                       <li class="weather-list h3 weather-humidity">humidity: </li>
                     </ul>
                   </div>
             </div> 
+            <div class="thing row w-100"><h2 class="w-100 text-center text-light">Your 5-day forceast for: <span class="weather-city text-info"></span></h2></div>
+            <div class="row forecast">
+              <div class="card text-center" style="width: 13rem;">
+                <div class="card-header date-1">
+                  date
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-info"><i class="weather-icon "><img id="wicon-1" src=""></i></li>
+                  <li class="list-group-item temp-1">temp</li>
+                  <li class="list-group-item humidity-1">humidity</li>
+                  <li class="list-group-item wind-1">windspeed</li>
+                </ul>
+              </div>
+              <div class="card text-center" style="width: 13rem;">
+                <div class="card-header date-9">
+                  date
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-info"><i class="weather-icon"><img id="wicon-9" src=""></i></li>
+                  <li class="list-group-item temp-9">Cras justo odio</li>
+                  <li class="list-group-item humidity-9">Dapibus ac facilisis in</li>
+                  <li class="list-group-item wind-9">Vestibulum at eros</li>
+                </ul>
+              </div>
+              <div class="card text-center" style="width: 13rem;">
+                <div class="card-header date-17">
+                  date
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-info"><i class="weather-icon"><img id="wicon-17" src=""></i></li>
+                  <li class="list-group-item temp-17">Cras justo odio</li>
+                  <li class="list-group-item humidity-17">Dapibus ac facilisis in</li>
+                  <li class="list-group-item wind-17">Vestibulum at eros</li>
+                </ul>
+              </div>
+              <div class="card text-center" style="width: 13rem;">
+                <div class="card-header date-25">
+                  date
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-info"><i class="weather-icon"><img id="wicon-25" src=""></i></li>
+                  <li class="list-group-item temp-25">Cras justo odio</li>
+                  <li class="list-group-item humidity-25">Dapibus ac facilisis in</li>
+                  <li class="list-group-item wind-25">Vestibulum at eros</li>
+                </ul>
+              </div>
+              <div class="card text-center" style="width: 13rem;">
+                <div class="card-header date-33">
+                  date
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-info"><i class="weather-icon"><img id="wicon-33" src=""></i></li>
+                  <li class="list-group-item temp-33">Cras justo odio</li>
+                  <li class="list-group-item humidity-33">Dapibus ac facilisis in</li>
+                  <li class="list-group-item wind-33">Vestibulum at eros</li>
+                </ul>
+              </div>
+
+            </div>
         </div>
+          
+
+      
 
     </div>
 
